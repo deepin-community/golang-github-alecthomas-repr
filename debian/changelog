@@ -1,5 +1,90 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-alecthomas-repr (0.4.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 0.4.0
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Anthony Fok <foka@debian.org>  Sun, 24 Mar 2024 20:27:38 -0600
+
+golang-github-alecthomas-repr (0.2.0-1) unstable; urgency=medium
+
+  * New upstream version 0.2.0
+  * Bump dependency of golang-any to (>= 2:1.18~) as per go.mod since v0.1.1
+
+ -- Anthony Fok <foka@debian.org>  Mon, 06 Mar 2023 10:52:06 -0700
+
+golang-github-alecthomas-repr (0.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump Standards-Version in d/control (no changes needed)
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sun, 18 Dec 2022 00:04:12 +0000
+
+golang-github-alecthomas-repr (0.1.0-1) unstable; urgency=medium
+
+  * New upstream version 0.1.0
+  * Set debian/watch to track release tags
+
+ -- Anthony Fok <foka@debian.org>  Sun, 25 Sep 2022 01:48:41 -0600
+
+golang-github-alecthomas-repr (0.0~git20220113.b1b626a-3) unstable; urgency=medium
+
+  * Reorder fields in debian/control and debian/copyright
+  * Change Section from devel to golang
+  * Use dh-sequence-golang instead of dh-golang and --with=golang
+  * Add --builddirectory=_build to dh calls in debian/rules
+  * Bump dependency on golang-any to (>= 2:1.15~), and remove dependency
+    on golang-github-stretchr-testify-dev as per go.mod
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Remove unneeded Files-Excluded field in debian/copyright
+
+ -- Anthony Fok <foka@debian.org>  Thu, 23 Jun 2022 22:40:09 -0600
+
+golang-github-alecthomas-repr (0.0~git20220113.b1b626a-2) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.0~git20220113.b1b626a
+  * Remove d/compat, switch to debhelper-compat 13
+  * Bump Standards-Version to 4.6.1 (no changes needed)
+  * Add upstream/metadata
+  * Add "Rules-Requires-Root: no"
+  * Add d/lintian-overrides for false-positives
+
+ -- Nilesh Patra <nilesh@debian.org>  Sat, 14 May 2022 16:44:33 +0530
+
+golang-github-alecthomas-repr (0.0~git20181024.d37bc2a-2) unstable; urgency=medium
+
+  * Remove 0.0~git20180724.ead2165-1 from debian/changelog
+    because it was never uploaded/released to Debian.
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Bump Standards-Version to 4.3.0 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Thu, 17 Jan 2019 22:43:17 -0700
+
+golang-github-alecthomas-repr (0.0~git20181024.d37bc2a-1) unstable; urgency=medium
+
+  * New upstream version 0.0~git20181024.d37bc2a
+  * Add debian/watch tracking Git HEAD
+  * Bump Standards-Version to 4.2.1 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 19 Dec 2018 17:36:57 -0700
+
+golang-github-alecthomas-repr (0.0~git20180318.07932d3-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 0.0~git20180318.07932d3
+  * Apply "cme fix dpkg" fixes to debian/control.
+    Bumping Standards-Version to 4.1.4 (no change)
+  * Use debhelper (>= 11)
+  * Use versioned dependency for dh-golang and golang-any
+    to facilitate backports.
+
+ -- Anthony Fok <foka@debian.org>  Tue, 12 Jun 2018 13:11:23 -0600
+
+golang-github-alecthomas-repr (0.0~git20171013.3757840-1) unstable; urgency=medium
+
+  * Initial release (Closes: #879748)
+
+ -- Anthony Fok <foka@debian.org>  Wed, 25 Oct 2017 04:45:58 -0600
